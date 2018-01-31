@@ -12,6 +12,9 @@ Encabezados
 ### Encabezado Tercero (Sección)
 
 Listas
-*Elemento a
-*Elemento b
-*Elemento c
+* Elemento a
+* Elemento b
+* Elemento c
+
+*cursiva*
+**negrita**
