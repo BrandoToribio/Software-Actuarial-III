@@ -110,3 +110,53 @@ contador <- contador + 1
 }
 print(v)
 plot(v)
+plot(v, type= "o")
+
+
+#formando un vector 2
+#set.seed(1)
+
+w <- 0
+intentos <-100
+x <- vector("numeric")
+for(i in 1:intentos){
+  z <- 6.5
+while(z>=3 && z<=10){
+  moneda <- rbinom(1,1,0.5)
+  x <- c(x,z)
+  if(moneda==1){ #caminata aleatoria
+    z <- z + 1
+  } else {
+    z <- z -1
+  }
+}
+  if(z>10){
+    w <- w +1 
+  }
+}
+#print(x)
+#plot(x, type= "o")
+paste("En",intentos,"intentos se sale",w,"veces por arriba y",intentos-w,"veces por abajo")
+
+
+#Repeat
+#la instrucción repeat inicia un ciclo infinito que no parará hasta que 
+#se llame un break
+i <- 0
+repeat{
+  i <- i+ 1
+  print(paste("Número:",i))
+  if(i>= 1000) break
+}
+
+#Se utiliza next para no hacer una iteración en un ciclo
+
+for(i in 1:100){
+  if(i<=20){
+    next
+    #evita hacer las primeras 20 iteraciones
+  }
+  #Otras instrucciones
+}
+
+#El comando return
