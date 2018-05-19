@@ -35,7 +35,7 @@ rankhospital <- function(estado, resultado, num = "best") {
     orden <- suppressWarnings(!is.na(c(as.numeric(paste(best[,2])))))
     best <- best[orden,]
     # Regresa el nombre del hospital con el puesto dado
-    if ((is.numeric(num)==TRUE)&(num<=nrow(best))){
+    if ((is.numeric(num)==TRUE)&(num<=nrow(best)&(num>0))){
         as.character(best[num,1])
     } else if ((is.numeric(num)==TRUE)&(num>nrow(best))){
         NA
