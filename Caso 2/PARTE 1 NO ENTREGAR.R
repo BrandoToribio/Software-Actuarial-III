@@ -18,3 +18,7 @@ nrow(outcome)
 
 #PUEDE SERVIR:
 hd <- read.csv("hospital-data.csv")
+sort(a, decreasing = TRUE)
+max(a)
+match(a,14)
+which.max(a)
