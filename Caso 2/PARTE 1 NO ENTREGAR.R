@@ -22,3 +22,9 @@ sort(a, decreasing = TRUE)
 max(a)
 match(a,14)
 which.max(a)
+
+a <- c("hola","estaba viendo","tren","adios")
+b <- c(4,2,3,3)
+c <- data.frame(A = a, B = b)
+c
+c[order(b,a),]
