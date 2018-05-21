@@ -71,8 +71,8 @@ rankingcompleto <- function(resultado, num = "mejor") {
     total
 }
 
-resultado <- "falla" #ataque #falla #neumonia
-num <- "peor"
+resultado <- "ataque" #ataque #falla #neumonia
+num <- 20
 head(rankingcompleto(resultado,num),10)
 tail(rankingcompleto(resultado),10)
 

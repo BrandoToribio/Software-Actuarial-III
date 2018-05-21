@@ -9,7 +9,7 @@ setwd("C:/Users/Brando Alberto/Documents/GitHub/Software-Actuarial-III/Caso 2")
 #17. Hospital 30-Day Death (Mortality) Rates from Heart Failure...
 #23. Hospital 30-Day Death (Mortality) Rates from Pneumonia...
 
-rankhospital <- function(estado, resultado, num = "best") {
+rankhospital <- function(estado, resultado, num = "mejor") {
     # Lectura de datos
     outcome <- read.csv("outcome-of-care-measures.csv")
     # Revisión de la validez de estado y resultado
